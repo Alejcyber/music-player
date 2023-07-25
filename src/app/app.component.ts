@@ -8,11 +8,4 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent {
   title = 'music-player';
-  links = [
-    { title: 'Home', route: 'home' },
-    { title: 'Player', route: 'player' }
-  ];
-
-  constructor(public route: ActivatedRoute) {}
-
 }
