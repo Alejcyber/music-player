@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'player',
     component: PlayerComponent
-  }
+  },
+  {
+    path: '*',
+    component: HomeComponent
+  },
 ];
 
 @NgModule({
