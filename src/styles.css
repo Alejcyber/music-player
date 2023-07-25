@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-dark-1: #000000;
+    --bg-dark-2: #272c42;
+    --bg-dark-3: #1a1e31;
+    --main-white: #FFFFFF;
+}
+
+.icon-click{
+    cursor: pointer;
+}
+
+.icon-click:active {
+    background-color: purple;
+}

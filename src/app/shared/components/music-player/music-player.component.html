@@ -1,0 +1,14 @@
+<div class="music-player row">
+    <div class="col-md-2 d-flex justify-content-center">
+        <span class="material-symbols-outlined m-2 icon-click" [innerHTML]="icon" (click)="toggleState()"></span>
+    </div>
+    <div class="col-md-8">
+        <div class="song-name" *ngIf="multimediaService.trackInfo$ | async as track">{{track.name}} - {{track.artist.name}}</div>
+        <div class="progress mt-4">
+            <div class="progress-bar" role="progressbar" [style.width]="(multimediaService.playerPercentage$ | async)+'%'" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div class="col-md-2 d-flex justify-content-end">
+        <span class="material-symbols-outlined m-2 icon-click" [routerLink]="'player'">open_in_full</span>
+    </div>
+</div>

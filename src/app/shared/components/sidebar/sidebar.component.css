@@ -1,0 +1,15 @@
+.sidebar{
+    height: 85vh;
+    background-color: var(--bg-dark-1);
+}
+
+.title{
+    font-size: 30px;
+    color: var(--main-white);
+    font-weight: bolder;
+}
+
+.icon{
+    color: var(--main-white);
+    font-size: 40px;
+}

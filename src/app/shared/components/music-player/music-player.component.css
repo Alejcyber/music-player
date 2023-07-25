@@ -1,0 +1,14 @@
+.music-player{
+    height: 15vh;
+    background-color: var(--bg-dark-2);
+}
+
+.material-symbols-outlined {
+    font-size: 130px;
+    color: var(--main-white);
+}
+
+.song-name{
+    font-size: 40px;
+    color: var(--main-white);
+}

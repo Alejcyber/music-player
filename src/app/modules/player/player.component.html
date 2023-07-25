@@ -1,0 +1,24 @@
+<div class="player" *ngIf="multimediaService.trackInfo$ | async as track">
+    <img [src]="track.cover" class="cover">
+
+    <table class="table table-striped table-dark">
+        <tbody>
+          <tr>
+            <th scope="row">Song</th>
+            <td>{{track.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Album</th>
+            <td>{{track.album}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Artist</th>
+            <td>{{track.artist.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Nationality</th>
+            <td>{{track.artist.nationality}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
